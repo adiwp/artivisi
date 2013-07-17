@@ -1,0 +1,43 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body>
+	<!-- ############ -->
+	<!-- SIDEBAR KIRI -->
+	<!-- ############ -->
+	<div id="sidebar" class="large-3 columns">
+	{% include header.html %}
+	</div>
+	<!-- ################### -->
+	<!-- END of SIDEBAR KIRI -->
+	<!-- ################### -->
+
+	<!-- ############ -->
+	<!-- BAGIAN KANAN -->
+	<!-- ############ -->
+	<div id="main" class="large-9 columns">
+		
+		<!-- HEADER UTAMA -->
+		<div id="main-header" class="row">
+		{% include main-header.html %}	
+		</div>
+		<!-- END of HEADER UTAMA -->
+
+		<!-- MAIN CONTENT -->
+		<div id="main-content" class="row">
+			<div class="large-12 columns">
+				{{ content | expand_urls: root_url }}
+			</div>
+		</div>
+		<!-- END of MAIN CONTENT -->
+
+		<!-- MAIN FOOTER -->
+		<div id="main-footer" class="row">
+			{% include footer.html %}
+		</div>
+		<!-- END of MAIN FOOTER -->
+	</div>
+	<!-- ################### -->
+	<!-- END of BAGIAN KANAN -->
+	<!-- ################### -->
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="author" content="{{ site.author }}">
+
+  {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+  
+  <link rel="stylesheet" href="{{ root_url }}/assets/fd/css/foundation.css" />
+  <link rel="stylesheet" href="{{ root_url }}/assets/fd/css/style-01.css" />
+  <link href="{{ root_url }}/assets/fd/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato|Inconsolata' rel='stylesheet' type='text/css'>
+  
+
+  <script src="{{ root_url }}/assets/fd/js/vendor/custom.modernizr.js"></script>
+
+</head>

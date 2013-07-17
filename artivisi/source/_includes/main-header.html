@@ -1,0 +1,28 @@
+<div class="small-7 large-9 columns">
+  <!-- main header kanan tempat navigasi utama -->
+  <div class="main-header-kiri">
+    {% include custom/navigation.html %}
+    {% if site.description %}
+    <section class="aboutme">
+      <p>
+        {{ site.description }}
+      </p>
+    </section>
+    {% endif %}
+  </div><!-- Akhir dari header kiri -->
+</div>
+<div class="small-5 large-3 columns">
+  <!-- main header kanan tempat form search -->
+  <div class="main-header-kanan">
+    <form id="cari" action="#">
+      <div class="row collapse">
+        <div class="small-3 large-2 columns">
+          <span class="prefix"><i class="icon-search"></i></span>
+        </div>
+        <div class="small-9 large-10 columns">
+          <input type="text" placeholder="search here">
+        </div>
+      </div>
+    </form>
+  </div><!-- Akhir dari header kanan -->
+</div>
