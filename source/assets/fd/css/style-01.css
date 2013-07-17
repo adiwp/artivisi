@@ -1,0 +1,150 @@
+/**
+ * HTML 5 standard elements
+ */
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+body {
+  background: #EEE;
+  margin: 0;
+}
+article {
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+}
+header {
+  padding: 20px;
+}
+p {
+  text-align: justify;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #2e3192;
+}
+
+a {
+    color: #2E3192;
+}
+
+#main-footer h4 {
+    color: #FFF;
+}
+p img {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: #fff;
+}
+/**
+ * Code styel stuffs
+ */
+pre {
+  background-color: #dcdcdc;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  line-height: 1.45em;
+  overflow: auto;
+}
+code {
+  background-color: #dcdcdc;
+  color: #696969;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Inconsolata","lucida console","Courier New",monospace;
+}
+blockquote {
+  font-style: italic;
+}
+
+/* custom heading inside panel foundation */
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+  color: #2e3192;
+}
+
+/**
+ * ID
+ */
+#sidebar {
+  padding: 20px;
+}
+  ul.socialicon li {
+    list-style: none;
+    margin-left: -1em;
+  }
+
+#main {
+
+}
+  #main-header, #main-content, #main-footer {
+    margin-left: 3px;
+  }
+  #main-content, #main-footer {
+    margin-top: 10px;
+  }
+  #main-header {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+    .main-header-kiri, .main-header-kanan {
+      background: #2E3192;
+    }
+    .main-header-kiri {
+      margin-left: -10px;
+      margin-right: -20px;
+      margin-top: -1px;
+      padding: 13px;
+    }
+    .main-header-kanan {
+      margin-left: 10px;
+      margin-right: -10px;
+      padding: 10px;
+    }
+      form#cari {
+        margin-bottom: -10px;
+      }
+    ul.main-navigasi {
+      margin: 1px 20px 0 0;
+    }
+    ul.main-navigasi li {
+      display: inline;
+      list-style: none;
+    }
+    ul.main-navigasi li a {
+      color: #fff;
+      font-size: 1.2em;
+    }
+    #cari {
+      margin-bottom: -3px;
+    }
+
+  #main-content {
+    background: #6567A4;
+    padding-top: 10px;
+  }
+    .frame {
+      border: 10px solid #a9a9a9;
+    }
+  #main-footer {
+    padding: 10px;
+    font-size: .9em;
+    background: #58C034;
+  }
+
+/**
+ * Class
+ */
+.copyright {
+  text-align: center;
+  font-size: .8em;
+  color: #2e3192;
+}
+
+.entry-content {
+  padding: 20px;
+}
